@@ -1,4 +1,4 @@
-package com.sergii.code.model;
+package com.sergii.code.model.get;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import lombok.*;

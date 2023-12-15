@@ -1,4 +1,4 @@
-package com.sergii.code.model;
+package com.sergii.code.model.get;
 
 import lombok.*;
 
@@ -9,9 +9,9 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @Builder
-public class Root {
+public class Support {
 
-    private Data data;
-    private Support support;
+    private String url;
+    private String text;
 
 }

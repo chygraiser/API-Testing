@@ -1,15 +1,12 @@
 package com.sergii.tests;
 
-import com.sergii.code.model.Data;
-import com.sergii.code.model.Root;
-import com.sergii.code.model.Support;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
+import com.sergii.code.model.get.Data;
+import com.sergii.code.model.get.Root;
+import com.sergii.code.model.get.Support;
+import com.sergii.code.model.post.RootPost;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -76,6 +73,32 @@ public class ApiTests extends BaseTest {
                 .all();
 
 
+    }
+
+    @Test
+    public void verifyBodyOfPostCreate() throws IOException {
+
+        byte[] body = Files.readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/postCreateBody.json"));
+
+
+        RootPost rootPostObject = given()
+                .body(body)
+                .when()
+                .post("/api/users")
+                .then()
+                .extract()
+                .as(RootPost.class);
+
+
+        RootPost expectedData = RootPost.builder()
+                .name("morpheus")
+                .job("leader")
+                .id(2)
+                .createdAt("2023-12-15T19:19:54.348Z")
+                .build();
+
+
+        Assert.assertEquals(rootPostObject, expectedData, "Data are not equals");
     }
 
 }
