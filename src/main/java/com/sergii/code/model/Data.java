@@ -1,5 +1,6 @@
 package com.sergii.code.model;
 
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import lombok.*;
 
 @Getter
@@ -16,5 +17,6 @@ public class Data {
     private int year;
     private String color;
     private String pantone_value;
+
 
 }

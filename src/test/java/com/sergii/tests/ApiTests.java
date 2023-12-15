@@ -9,6 +9,11 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 import static io.restassured.RestAssured.given;
 
 public class ApiTests extends BaseTest {
@@ -56,10 +61,13 @@ public class ApiTests extends BaseTest {
 
 
     @Test
-    public void postCreate() {
+    public void postCreate() throws IOException {
+
+        byte[] body = Files.readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/postCreateBody.json"));
+
 
         given()
-                .body()
+                .body(body)
                 .when()
                 .post("/api/users")
                 .then()
