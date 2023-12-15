@@ -1,9 +1,8 @@
 package com.sergii.code;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class singleResourceResponse {
-
-}
-
 
 /*
 {
@@ -19,3 +18,7 @@ public class singleResourceResponse {
         "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
         }
         }*/
+
+
+
+}
