@@ -1,6 +1,6 @@
 package com.sergii.tests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sergii.code.model.put.ResponsePut;
 import com.sergii.code.model.get.Data;
 import com.sergii.code.model.get.Root;
 import com.sergii.code.model.get.Support;
@@ -102,5 +102,75 @@ public class ApiTests extends BaseTest {
         Assert.assertEquals(rootPostObject, expectedData, "Data are not equals");
 
     }
+
+    @Test
+    public void putUpdate() throws IOException {
+
+        byte[] body = readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/postCreateBody.json"));
+
+
+        given()
+                .body(body)
+                .when()
+                .put("/api/users/2")
+                .then()
+                .statusCode(200)
+                .log()
+                .all();
+
+    }
+
+    @Test
+    public void verifyBodyOfPutUpdate() {
+
+        ResponsePut rootObject = given()
+                .when()
+                .put("/api/users/2")
+                .then()
+                .extract()
+                .as(ResponsePut.class);
+
+
+        ResponsePut expectedData = ResponsePut.builder()
+                .name("Test")
+                .job("AQA")
+                .updatedAt("2023-12-17T12:14:01.616Z")
+                .build();
+
+
+        Assert.assertEquals(rootObject, expectedData, "Data are not equals");
+    }
+
+    @Test
+    public void deleteMethodCheck() throws IOException {
+
+
+        given()
+                .when()
+                .delete("/api/users/2")
+                .then()
+                .statusCode(204)
+                .log()
+                .all();
+
+    }
+
+    @Test
+    public void patchMethodCheck() throws IOException {
+
+        byte[] body = readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/patchBody.json"));
+
+
+        given()
+                .when()
+                .patch("/api/users/2")
+                .then()
+                .statusCode(200)
+                .log()
+                .all();
+
+    }
+
+
 
 }
