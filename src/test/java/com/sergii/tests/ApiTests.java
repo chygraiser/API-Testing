@@ -1,5 +1,6 @@
 package com.sergii.tests;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sergii.code.model.get.Data;
 import com.sergii.code.model.get.Root;
 import com.sergii.code.model.get.Support;
@@ -8,10 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 
 import static io.restassured.RestAssured.given;
+import static java.nio.file.Files.readAllBytes;
 
 public class ApiTests extends BaseTest {
 
@@ -31,7 +32,7 @@ public class ApiTests extends BaseTest {
     @Test
     public void verifyBodyOfGetSingleResource() {
 
-       Root rootObject = given()
+        Root rootObject = given()
                 .when()
                 .get("/api/unknown/2")
                 .then()
@@ -39,28 +40,28 @@ public class ApiTests extends BaseTest {
                 .as(Root.class);
 
 
-       Root expectedData = Root.builder()
-               .data(Data.builder()
-                       .id(2).name("fuchsia rose")
-                       .year(2001)
-                       .color("#C74375")
-                       .pantone_value("17-2031")
-                       .build())
-               .support(Support.builder()
-                       .url("https://reqres.in/#support-heading")
-                       .text("To keep ReqRes free, contributions towards server costs are appreciated!")
-                       .build())
-               .build();
+        Root expectedData = Root.builder()
+                .data(Data.builder()
+                        .id(2).name("fuchsia rose")
+                        .year(2001)
+                        .color("#C74375")
+                        .pantone_value("17-2031")
+                        .build())
+                .support(Support.builder()
+                        .url("https://reqres.in/#support-heading")
+                        .text("To keep ReqRes free, contributions towards server costs are appreciated!")
+                        .build())
+                .build();
 
 
-       Assert.assertEquals(rootObject, expectedData, "Data are not equals");
+        Assert.assertEquals(rootObject, expectedData, "Data are not equals");
     }
 
 
     @Test
     public void postCreate() throws IOException {
 
-        byte[] body = Files.readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/postCreateBody.json"));
+        byte[] body = readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/postCreateBody.json"));
 
 
         given()
@@ -78,7 +79,7 @@ public class ApiTests extends BaseTest {
     @Test
     public void verifyBodyOfPostCreate() throws IOException {
 
-        byte[] body = Files.readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/postCreateBody.json"));
+        byte[] body = readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/postCreateBody.json"));
 
 
         RootPost rootPostObject = given()
@@ -91,14 +92,15 @@ public class ApiTests extends BaseTest {
 
 
         RootPost expectedData = RootPost.builder()
-                .name("morpheus")
-                .job("leader")
-                .id(2)
-                .createdAt("2023-12-15T19:19:54.348Z")
+                .name("Test")
+                .job("AQA")
+                .id("2")
+                .createdAt("2023-12-17T10:37:05.070Z")
                 .build();
 
 
         Assert.assertEquals(rootPostObject, expectedData, "Data are not equals");
+
     }
 
 }
