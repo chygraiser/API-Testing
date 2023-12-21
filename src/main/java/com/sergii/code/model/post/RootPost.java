@@ -15,10 +15,15 @@ import java.util.Date;
 public class RootPost {
 
 
-    private String name = "Test";
-    private String job = "AQA";
+    private String name;
+    private String job;
     private String id;
     private String createdAt;
+
+  /*  @JsonSetter(value = "name")
+    public void setName(String name){
+        this.name = "Test";
+    }*/
 
     @JsonSetter(value = "createdAt")
     public void setCreateAt(String newCreatedAt){

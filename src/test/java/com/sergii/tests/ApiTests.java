@@ -5,17 +5,22 @@ import com.sergii.code.model.get.Data;
 import com.sergii.code.model.get.Root;
 import com.sergii.code.model.get.Support;
 import com.sergii.code.model.post.RootPost;
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
+import static io.qameta.allure.SeverityLevel.BLOCKER;
 import static io.restassured.RestAssured.given;
 import static java.nio.file.Files.readAllBytes;
 
 public class ApiTests extends BaseTest {
+
 
     @Test
     public void getSingleResource() {
@@ -77,6 +82,16 @@ public class ApiTests extends BaseTest {
 
     }
 
+    @Step("API Testing")
+    @Description("Smoke Test")
+    @Epic("API Epic")
+    @Story("POST Create Request Verification")
+    @Feature("User register flow")
+    @Severity(BLOCKER)
+    @Issue("DEFECT-42345")
+    @TmsLinks(value = {@TmsLink("TC-432"), @TmsLink("TC-434")})
+    @Link(name = "JIRA", url = "https://www.atlassian.com/software/jira")
+    @Owner(value = "Sergii Test")
     @Test
     public void verifyBodyOfPostCreate() throws IOException {
 
@@ -98,6 +113,8 @@ public class ApiTests extends BaseTest {
                 .id("2")
                 .createdAt("2023-12-17T10:37:05.070Z")
                 .build();
+
+        addAttachment("Image20231215195005.jpg");
 
 
         Assert.assertEquals(rootPostObject, expectedData, "Data are not equals");
@@ -171,6 +188,12 @@ public class ApiTests extends BaseTest {
                 .all();
 
     }
+
+    @Attachment
+    public byte[] addAttachment(String fileName) throws IOException {
+        return Files.readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/", fileName));
+    }
+
 
 
 

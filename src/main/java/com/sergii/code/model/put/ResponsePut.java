@@ -1,5 +1,6 @@
 package com.sergii.code.model.put;
 
+import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.*;
 
 @Getter
@@ -11,8 +12,13 @@ import lombok.*;
 @Builder
 public class ResponsePut {
 
-    private String name;
-    private String job;
+    private String name = "Test";
+    private String job = "AQA";
     private String updatedAt;
+
+    @JsonSetter(value = "updatedAt")
+    public void setUpdateAt(String newUpdatedAt){
+        this.updatedAt = "2023-12-17T12:14:01.616Z";
+    }
 
     }
