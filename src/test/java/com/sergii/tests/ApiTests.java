@@ -114,7 +114,7 @@ public class ApiTests extends BaseTest {
                 .createdAt("2023-12-17T10:37:05.070Z")
                 .build();
 
-        addAttachment("Image20231215195005.jpg");
+        addAttachment("123.png");
 
 
         Assert.assertEquals(rootPostObject, expectedData, "Data are not equals");
@@ -191,7 +191,7 @@ public class ApiTests extends BaseTest {
 
     @Attachment
     public byte[] addAttachment(String fileName) throws IOException {
-        return Files.readAllBytes(Path.of("/Users/Noname/IdeaProjects/API-Testing/src/test/resources/", fileName));
+        return Files.readAllBytes(Paths.get("src/test/resources", fileName));
     }
 
 
