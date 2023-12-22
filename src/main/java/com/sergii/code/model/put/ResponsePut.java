@@ -12,8 +12,8 @@ import lombok.*;
 @Builder
 public class ResponsePut {
 
-    private String name = "Test";
-    private String job = "AQA";
+    private String name;
+    private String job;
     private String updatedAt;
 
     @JsonSetter(value = "updatedAt")
