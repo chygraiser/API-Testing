@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.sergii.tests.ApiTests" class="method navigator-link" hash-for-method="verifyBodyOfPutUpdate">verifyBodyOfPutUpdate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -162,26 +148,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.sergii.tests.ApiTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyBodyOfPutUpdate">
-                  </a> <!-- verifyBodyOfPutUpdate -->
-                  <span class="method-name">verifyBodyOfPutUpdate</span>
-                  <div class="stack-trace">java.lang.AssertionError: Data are not equals expected [ResponsePut(name=Test, job=AQA, updatedAt=2023-12-17T12:14:01.616Z)] but found [ResponsePut(name=null, job=null, updatedAt=2024-01-02T13:15:16.797Z)]
-	at com.sergii.tests.ApiTests.verifyBodyOfPutUpdate(ApiTests.java:158)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -291,44 +257,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'deleteMethodCheck')
 data.setCell(0, 2, 'com.sergii.tests.ApiTests')
-data.setCell(0, 3, 2412);
+data.setCell(0, 3, 2956);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyBodyOfGetSingleResource')
 data.setCell(1, 2, 'com.sergii.tests.ApiTests')
-data.setCell(1, 3, 1024);
+data.setCell(1, 3, 861);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'postCreate')
+data.setCell(2, 1, 'verifyBodyOfPostCreate')
 data.setCell(2, 2, 'com.sergii.tests.ApiTests')
-data.setCell(2, 3, 307);
+data.setCell(2, 3, 265);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyBodyOfPutUpdate')
+data.setCell(3, 1, 'patchMethodCheck')
 data.setCell(3, 2, 'com.sergii.tests.ApiTests')
 data.setCell(3, 3, 261);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'getSingleResource')
 data.setCell(4, 2, 'com.sergii.tests.ApiTests')
-data.setCell(4, 3, 258);
+data.setCell(4, 3, 255);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyBodyOfPostCreate')
+data.setCell(5, 1, 'putUpdate')
 data.setCell(5, 2, 'com.sergii.tests.ApiTests')
-data.setCell(5, 3, 198);
+data.setCell(5, 3, 216);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'patchMethodCheck')
+data.setCell(6, 1, 'postCreate')
 data.setCell(6, 2, 'com.sergii.tests.ApiTests')
-data.setCell(6, 3, 180);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'putUpdate')
-data.setCell(7, 2, 'com.sergii.tests.ApiTests')
-data.setCell(7, 3, 173);
+data.setCell(6, 3, 207);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -361,65 +323,55 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteMethodCheck</span>
-                <span class="method-start">1334 ms</span>
+                <span class="method-start">1213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">3769 ms</span>
+                <span class="method-start">4193 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getSingleResource</span>
-                <span class="method-start">3784 ms</span>
+                <span class="method-start">4195 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">4045 ms</span>
+                <span class="method-start">4454 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">patchMethodCheck</span>
-                <span class="method-start">4049 ms</span>
+                <span class="method-start">4458 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">4232 ms</span>
+                <span class="method-start">4724 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">postCreate</span>
-                <span class="method-start">4234 ms</span>
+                <span class="method-start">4729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">4543 ms</span>
+                <span class="method-start">4942 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">putUpdate</span>
-                <span class="method-start">4545 ms</span>
+                <span class="method-start">4947 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">4720 ms</span>
+                <span class="method-start">5171 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBodyOfGetSingleResource</span>
-                <span class="method-start">4724 ms</span>
+                <span class="method-start">5174 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">5752 ms</span>
+                <span class="method-start">6038 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBodyOfPostCreate</span>
-                <span class="method-start">5755 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initTest</span>
-                <span class="method-start">5959 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyBodyOfPutUpdate</span>
-                <span class="method-start">5962 ms</span>
+                <span class="method-start">6040 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

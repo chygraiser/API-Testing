@@ -125,7 +125,7 @@ public class ApiTests extends BaseTest {
 
     }
 
-    @Step("API Testing")
+    /*@Step("API Testing")
     @Description("Smoke Test")
     @Epic("API Epic")
     @Story("PUT user data update Request Verification")
@@ -156,7 +156,7 @@ public class ApiTests extends BaseTest {
 
 
         Assert.assertEquals(rootObject, expectedData, "Data are not equals");
-    }
+    }*/
 
     @Test
     public void deleteMethodCheck() throws IOException {

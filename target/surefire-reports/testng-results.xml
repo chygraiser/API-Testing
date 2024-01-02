@@ -1,123 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-02T14:15:10 CET" name="Surefire suite" finished-at="2024-01-02T14:15:16 CET" duration-ms="6339">
+  <suite started-at="2024-01-02T15:15:14 CET" name="Surefire suite" finished-at="2024-01-02T15:15:20 CET" duration-ms="6401">
     <groups>
     </groups>
-    <test started-at="2024-01-02T14:15:10 CET" name="Surefire test" finished-at="2024-01-02T14:15:16 CET" duration-ms="6339">
+    <test started-at="2024-01-02T15:15:14 CET" name="Surefire test" finished-at="2024-01-02T15:15:20 CET" duration-ms="6401">
       <class name="com.sergii.tests.ApiTests">
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:10 CET" name="initTest" finished-at="2024-01-02T14:15:11 CET" duration-ms="1192" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:14 CET" name="initTest" finished-at="2024-01-02T15:15:15 CET" duration-ms="1048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="deleteMethodCheck()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:11 CET" name="deleteMethodCheck" finished-at="2024-01-02T14:15:14 CET" duration-ms="2412" status="PASS">
+        <test-method signature="deleteMethodCheck()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:15 CET" name="deleteMethodCheck" finished-at="2024-01-02T15:15:18 CET" duration-ms="2956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteMethodCheck -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:14 CET" name="initTest" finished-at="2024-01-02T14:15:14 CET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:18 CET" name="initTest" finished-at="2024-01-02T15:15:18 CET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="getSingleResource()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:14 CET" name="getSingleResource" finished-at="2024-01-02T14:15:14 CET" duration-ms="258" status="PASS">
+        <test-method signature="getSingleResource()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:18 CET" name="getSingleResource" finished-at="2024-01-02T15:15:18 CET" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSingleResource -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:14 CET" name="initTest" finished-at="2024-01-02T14:15:14 CET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:18 CET" name="initTest" finished-at="2024-01-02T15:15:18 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="patchMethodCheck()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:14 CET" name="patchMethodCheck" finished-at="2024-01-02T14:15:14 CET" duration-ms="180" status="PASS">
+        <test-method signature="patchMethodCheck()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:18 CET" name="patchMethodCheck" finished-at="2024-01-02T15:15:19 CET" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patchMethodCheck -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:14 CET" name="initTest" finished-at="2024-01-02T14:15:14 CET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:19 CET" name="initTest" finished-at="2024-01-02T15:15:19 CET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="postCreate()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:14 CET" name="postCreate" finished-at="2024-01-02T14:15:15 CET" duration-ms="307" status="PASS">
+        <test-method signature="postCreate()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:19 CET" name="postCreate" finished-at="2024-01-02T15:15:19 CET" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCreate -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:15 CET" name="initTest" finished-at="2024-01-02T14:15:15 CET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:19 CET" name="initTest" finished-at="2024-01-02T15:15:19 CET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="putUpdate()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:15 CET" name="putUpdate" finished-at="2024-01-02T14:15:15 CET" duration-ms="173" status="PASS">
+        <test-method signature="putUpdate()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:19 CET" name="putUpdate" finished-at="2024-01-02T15:15:19 CET" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putUpdate -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:15 CET" name="initTest" finished-at="2024-01-02T14:15:15 CET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:19 CET" name="initTest" finished-at="2024-01-02T15:15:19 CET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="verifyBodyOfGetSingleResource()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:15 CET" name="verifyBodyOfGetSingleResource" finished-at="2024-01-02T14:15:16 CET" duration-ms="1024" status="PASS">
+        <test-method signature="verifyBodyOfGetSingleResource()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:19 CET" name="verifyBodyOfGetSingleResource" finished-at="2024-01-02T15:15:20 CET" duration-ms="861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBodyOfGetSingleResource -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:16 CET" name="initTest" finished-at="2024-01-02T14:15:16 CET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:20 CET" name="initTest" finished-at="2024-01-02T15:15:20 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="verifyBodyOfPostCreate()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:16 CET" name="verifyBodyOfPostCreate" finished-at="2024-01-02T14:15:16 CET" duration-ms="198" status="PASS">
+        <test-method signature="verifyBodyOfPostCreate()[pri:0, instance:com.sergii.tests.ApiTests@101ca8da]" started-at="2024-01-02T15:15:20 CET" name="verifyBodyOfPostCreate" finished-at="2024-01-02T15:15:20 CET" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBodyOfPostCreate -->
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:16 CET" name="initTest" finished-at="2024-01-02T14:15:16 CET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method signature="verifyBodyOfPutUpdate()[pri:0, instance:com.sergii.tests.ApiTests@7730ef88]" started-at="2024-01-02T14:15:16 CET" name="verifyBodyOfPutUpdate" finished-at="2024-01-02T14:15:16 CET" duration-ms="261" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Data are not equals expected [ResponsePut(name=Test, job=AQA, updatedAt=2023-12-17T12:14:01.616Z)] but found [ResponsePut(name=null, job=null, updatedAt=2024-01-02T13:15:16.797Z)]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Data are not equals expected [ResponsePut(name=Test, job=AQA, updatedAt=2023-12-17T12:14:01.616Z)] but found [ResponsePut(name=null, job=null, updatedAt=2024-01-02T13:15:16.797Z)]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at com.sergii.tests.ApiTests.verifyBodyOfPutUpdate(ApiTests.java:158)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBodyOfPutUpdate -->
       </class> <!-- com.sergii.tests.ApiTests -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
