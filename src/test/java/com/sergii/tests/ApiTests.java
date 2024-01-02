@@ -5,14 +5,17 @@ import com.sergii.code.model.get.Data;
 import com.sergii.code.model.get.Root;
 import com.sergii.code.model.get.Support;
 import com.sergii.code.model.post.RootPost;
-import org.springframework.context.annotation.Description;
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
+import static io.qameta.allure.SeverityLevel.CRITICAL;
 import static io.restassured.RestAssured.given;
 import static java.nio.file.Files.readAllBytes;
 
@@ -122,8 +125,18 @@ public class ApiTests extends BaseTest {
 
     }
 
+    @Step("API Testing")
+    @Description("Smoke Test")
+    @Epic("API Epic")
+    @Story("PUT user data update Request Verification")
+    @Feature("User data update flow")
+    @Severity(CRITICAL)
+    @Issue("DEFECT-42345")
+    @TmsLinks(value = {@TmsLink("TC-32"), @TmsLink("TC-14")})
+    @Link(name = "JIRA", url = "https://www.atlassian.com/software/jira")
+    @Owner(value = "Sergii Test")
     @Test
-    public void verifyBodyOfPutUpdate() {
+    public void verifyBodyOfPutUpdate() throws IOException {
 
         ResponsePut rootObject = given()
                 .when()
@@ -138,6 +151,8 @@ public class ApiTests extends BaseTest {
                 .job("AQA")
                 .updatedAt("2023-12-17T12:14:01.616Z")
                 .build();
+
+        addAttachment("123.png");
 
 
         Assert.assertEquals(rootObject, expectedData, "Data are not equals");
@@ -172,6 +187,11 @@ public class ApiTests extends BaseTest {
                 .all();
 
     }
+
+    @Attachment
+        public void addAttachment(String fileName) throws IOException {
+            Files.readAllBytes(Paths.get("src/test/resources", fileName));
+        }
 
 
 
