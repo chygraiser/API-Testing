@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.sergii.runner.Runner" time="10.523" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Noname\IdeaProjects\API-Testing\target\test-classes;C:\Users\Noname\IdeaProjects\API-Testing\target\classes;C:\Users\Noname\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.17.1\log4j-slf4j-impl-2.17.1.jar;C:\Users\Noname\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Noname\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Noname\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Noname\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Noname\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Noname\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Noname\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Noname\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Noname\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Noname\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Noname\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Noname\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Noname\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Noname\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Noname\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Noname\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Noname\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Noname\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Noname\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Noname\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Noname\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Noname\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Noname\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.0\jackson-databind-2.16.0.jar;C:\Users\Noname\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.0\jackson-annotations-2.16.0.jar;C:\Users\Noname\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.0\jackson-core-2.16.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Noname\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Noname\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\Noname\AppData\Local\Temp\surefire14846115627517018594\surefirebooter-20240109174849103_3.jar C:\Users\Noname\AppData\Local\Temp\surefire14846115627517018594 2024-01-09T17-48-48_557-jvmRun1 surefire-20240109174849103_1tmp surefire_0-20240109174849103_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Noname\IdeaProjects\API-Testing\target\test-classes;C:\Users\Noname\IdeaProjects\API-Testing\target\classes;C:\Users\Noname\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.17.1\log4j-slf4j-impl-2.17.1.jar;C:\Users\Noname\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Noname\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Noname\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Noname\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Noname\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Noname\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Noname\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Noname\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Noname\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Noname\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Noname\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Noname\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Noname\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Noname\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Noname\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Noname\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Noname\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Noname\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Noname\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Noname\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Noname\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Noname\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Noname\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Noname\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.0\jackson-databind-2.16.0.jar;C:\Users\Noname\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.0\jackson-annotations-2.16.0.jar;C:\Users\Noname\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.0\jackson-core-2.16.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Noname\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Noname\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Noname\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Noname\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Noname"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Noname\IdeaProjects\API-Testing"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Noname\AppData\Local\Temp\surefire14846115627517018594\surefirebooter-20240109174849103_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.20+9-LTS-256"/>
+    <property name="user.name" value="Noname"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Noname\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Noname\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.20"/>
+    <property name="user.dir" value="C:\Users\Noname\IdeaProjects\API-Testing"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Maven\apache-maven-3.9.4\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\PowerShell\7-preview\preview;C:\Users\Noname\scoop\shims;C:\Users\Noname\AppData\Local\Microsoft\WindowsApps;;C:\Users\Noname\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.2\bin;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.20+9-LTS-256"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;First BDD test&quot;, &quot;Unknown&quot;](1)" classname="com.sergii.runner.Runner" time="5.274">
+    <system-out><![CDATA[
+Scenario: First BDD test              &amp#27;[90m# src/test/resources/features/getRequest.feature:3&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI sent request to user API&amp#27;[0m     &amp#27;[90m# com.sergii.stepdef.GetSteps.i_sent_request_to_user_api()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser get &amp#27;[0m&amp#27;[32m&amp#27;[1m'body.json'&amp#27;[0m&amp#27;[32m user data&amp#27;[0m &amp#27;[90m# com.sergii.stepdef.GetSteps.user_get_user_data(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Second BDD test&quot;, &quot;Unknown&quot;](2)" classname="com.sergii.runner.Runner" time="0.182">
+    <system-out><![CDATA[
+Scenario Outline: Second BDD test              &amp#27;[90m# src/test/resources/features/getRequest.feature:13&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI sent request to user API&amp#27;[0m              &amp#27;[90m# com.sergii.stepdef.GetSteps.i_sent_request_to_user_api()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser get &amp#27;[0m&amp#27;[32m&amp#27;[1mbody.json&amp#27;[0m&amp#27;[32m user data diff files&amp#27;[0m &amp#27;[90m# com.sergii.stepdef.GetSteps.user_get_body_json_user_data_diff_files(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

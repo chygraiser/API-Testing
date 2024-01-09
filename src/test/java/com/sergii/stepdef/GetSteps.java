@@ -13,12 +13,7 @@ import io.restassured.mapper.ObjectMapperSerializationContext;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 
-import java.io.IOException;
-import java.nio.file.Path;
-
 import static io.restassured.RestAssured.given;
-import static java.nio.file.Files.readAllBytes;
-import static org.testng.reporters.Files.readFile;
 
 public class GetSteps {
     
@@ -65,6 +60,26 @@ public class GetSteps {
 
         Assert.assertEquals(actualResult, expectedResult, "Data are not equals");
     }
+
+    @Then("^User get (.*) user data diff files$")
+    public void user_get_body_json_user_data_diff_files(String file) {
+        Root expectedResult = Root.builder()
+                .data(Data.builder()
+                        .id(2).name("fuchsia rose")
+                        .year(2001)
+                        .color("#C74375")
+                        .pantone_value("17-2031")
+                        .build())
+                .support(Support.builder()
+                        .url("https://reqres.in/#support-heading")
+                        .text("To keep ReqRes free, contributions towards server costs are appreciated!")
+                        .build())
+                .build();
+
+
+        Assert.assertEquals(actualResult, expectedResult, "Data are not equals");
+    }
+
 
   /*  private String readFile(String file, Class<Root> rootClass) {
         return this.readFile(file,rootClass);
