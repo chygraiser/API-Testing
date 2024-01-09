@@ -4,9 +4,10 @@ Feature:
     When I sent request to user API
     Then User get 'body.json' user data
 
-Scenario Outline: First BDD test
-  When I sent request to user API
-  Then User get <file> user data diff files
-  Examples:
-    | file      |  |
-    | body.json |  |
+
+  Scenario Outline: Second BDD test
+    When I sent request to user API
+    Then User get <file> user data diff files
+    Examples:
+      | file      |
+      | body.json |
